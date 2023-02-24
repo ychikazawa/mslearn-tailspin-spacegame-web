@@ -57,7 +57,7 @@ steps:
   displayName: 'Publish test results'
   inputs:
     testResultsFormat: NUnit
-    testResultsFiles: 'TestResults/*.rtx'
+    testResultsFiles: '**/*.rtx'
 
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - $(buildConfiguration)'
